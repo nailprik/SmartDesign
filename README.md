@@ -25,9 +25,9 @@ $ python app.py
 
 * Создание нового товара
 
-Добавление нового товара осуществляется с помощью PUT запроса на адрес http://localhost:5000/add
+Добавление нового товара осуществляется с помощью POST запроса на адрес http://localhost:5000/add
 ```sh
-$ curl --header "Content-Type: application/json"   --request PUT   --data '{"name":"Phone","about":"Smartphone","param":[{"Internet":"5G"},{"Display":"Amoled"}]}'   http://localhost:5000/add
+$ curl --header "Content-Type: application/json"   --request POST   --data '{"name":"Phone","about":"Smartphone","param":[{"Internet":"5G"},{"Display":"Amoled"}]}'   http://localhost:5000/add
 ```
 Метод возвращает данные из базы данных по новому добавленному товару
 
