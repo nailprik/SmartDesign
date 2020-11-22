@@ -31,7 +31,7 @@ def add_prod(name, about, param):
     return new_prod
 
 
-@app.route('/add', methods=['PUT'])
+@app.route('/add', methods=['POST'])
 def add():
     # Метод добавления товара
     record = json.loads(request.data)
